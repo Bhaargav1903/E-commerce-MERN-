@@ -1,0 +1,305 @@
+.App {
+  text-align: center;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* My styling */
+.nav-ul li{
+  display: inline-block;
+  padding: 10px;    
+}
+.nav-ul li a{
+  text-decoration: none;
+  color: lawngreen;
+  padding: 5px;
+}
+.nav-ul{
+  padding: 5x;
+  margin: 0;
+  background-color: black;
+}
+
+.nav-right{
+  text-align: right;
+}
+
+.Footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width:100%;
+  background-color: black;
+}
+
+.Signup{
+  text-align: center;
+  margin-left: 30%;
+  background-color: lawngreen;
+  width: 400px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+.inputbox{
+  text-align: center;
+  display: block;
+  margin: 11px;
+  padding: 7px;  
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.button{
+    padding: 7px;
+    width: 200px;
+    margin-right: 150px;
+    background-color: black;
+    color: lawngreen;
+    border-radius: 7px;
+}
+
+
+.login{
+  margin-top: 100px;
+  margin-left: 40%;
+}
+
+.loginbutton{
+   margin-left:-55%;
+}
+
+.logo{
+  width: 45px;
+  float:left;
+  margin-top: 4px;
+  margin-left:3px;
+  border-radius: 30%;
+}
+
+
+
+
+/* PRODUCT COMPONENT STYLING */
+/* Styling for the product form */
+.product {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: lawngreen;
+}
+
+.product h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  background-color: lawngreen;
+}
+
+.pinputbox {
+  width: 77%;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: -3%;
+  border: 1px solid #ccc;
+  border-radius: 11px;
+  font-size: 16px;
+}
+
+.pbutton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 11px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pbutton:hover {
+  background-color: rgb(68, 75, 68);
+}
+
+/* Responsive styling */
+@media screen and (max-width: 480px) {
+  .product {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/*Form Validation  */
+.invalid{
+  color:red;
+  margin-top: -20px;
+  display: block;
+  margin-left: 20px;
+}
+
+
+
+/* ProductsList styling */
+.product-list {
+  text-align: center;
+  margin: 20px;
+}
+
+.product-list h1 {
+  margin-bottom: 10px;
+}
+
+.product-list ul {
+  list-style-type: none;
+  display: flex;
+  border: 1px solid #ccc;
+  background-color: lawngreen;
+}
+
+.product-list ul li {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.product-list ul li:last-child {
+  border-right: none;
+}
+
+.product-list ul li:nth-child(1) {
+  flex-basis: 10%;
+}
+
+.product-list ul li:nth-child(2) {
+  flex-basis: 30%;
+}
+
+.product-list ul li:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.product-list ul li:nth-child(4) {
+  flex-basis: 20%;
+}
+
+.product-list ul li:nth-child(5) {
+  flex-basis: 25%;
+}
+
+/* Styling for dynamically generated product rows */
+.product-list ul ul {
+  list-style-type: none;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-top: -1px;
+  align-items: center;
+}
+
+.product-list ul ul li {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+
+.product-list ul ul li:last-child {
+  border-right: none;
+}
+
+.product-list ul ul li button {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+/* Alternate row background color */
+.product-list ul ul:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+/* Styling for Update Link */
+.update-link {
+  text-decoration: none;
+  color: black;
+  padding: 1px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  margin-top: 3px;
+  background-color: lightgrey;
+  font-size: medium;
+}
+
+.update-link:hover {
+  background-color: #3498db;
+  color: black;
+  border-color: #3498db;
+  text-decoration: none;
+}
+
+
+/* Search Box , Search API */
+.searchbox {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+  transition: border-color 0.3s;
+}
+
+.searchbox:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+
+/* Footer Styling */
+.Footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  opacity: 0.8; /* Adjust the opacity here */
+}
